@@ -34,9 +34,30 @@ To develop a Python class with functions to:
 ---
 
 ## 💻 PROGRAM:
-
-ADD CODE HERE
+```
+  class Numbers:
+      def __init__(self, N=0):
+          self.N = int(input())
+      def create_list(self):
+          self.L=[]
+          for i in range(self.N):
+              x=int(input())
+              self.L.append(x)
+      def sorting(self):
+          for i in range(self.N):
+              mi=i
+              for j in range(i+1,self.N):
+                  if self.L[j]<self.L[mi]:
+                      mi=j
+              (self.L[i],self.L[mi])=(self.L[mi],self.L[i])
+      def print_List(self):
+          for i in range(self.N):
+              print(self.L[i])
+```
 
 ## OUTPUT:
 
+<img width="614" height="525" alt="image" src="https://github.com/user-attachments/assets/bb6df33e-ed32-429b-b05c-1d326fec8a95" />
+
 ## RESULT:
+Thus to create a python program to implement insertion sorting using class is created and executed successfully.
